@@ -4,6 +4,10 @@ export const Container = styled.div`
     margin: 50px 100px;
     padding-bottom: 30px;
     border-bottom: 1px solid #E5E5E5;
+
+    @media only screen and (max-width: 1280px) {
+        margin: 50px 25px;
+    }
 `
 export const FirstRow = styled.div`
     display: flex;

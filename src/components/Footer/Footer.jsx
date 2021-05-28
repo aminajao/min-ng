@@ -9,7 +9,7 @@ const Footer = () => {
         <>
             <Container>
                 <div>
-                    <FooterLogo />
+                    <FooterLogo className="footer__logo" />
                     <Text>
                         min.ng is Nigeria’s #1 B2B market for made in Nigeria goods.
                         We offer a wide array of ready-to-ship and customizable products in
@@ -61,7 +61,7 @@ const Footer = () => {
             <FooterLinks>
                 <a href='/'>Privacy & Policy</a>
                 <a href='/'>Terms of service</a>
-                <a href='/'>©2021 min.ng. All Rights Reserved</a>
+                <a href='/' className='last'>©2021 min.ng. All Rights Reserved</a>
             </FooterLinks>
         </>
     )

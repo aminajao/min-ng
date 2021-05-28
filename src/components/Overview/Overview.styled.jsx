@@ -5,16 +5,19 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-gap: 50px;
+    @media only screen and (max-width: 1280px) {
+        margin: 25px;
+        grid-gap: 20px;
+    }
+    @media only screen and (max-width: 876px) {
+        display: block;
+    }
 `
 export const LeftContainer = styled.div`
-    display: grid;
+    // display: grid;
+
 `
 export const ColorSection = styled.div`
-    
-    div {
-        width: 80px;
-        height: 50px;
-    }
     h4 {
         font-size: 20px;
         color: #252B1D;
@@ -23,7 +26,7 @@ export const ColorSection = styled.div`
     }
     .color-container {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 
         .text {
             font-size: 14px;
@@ -81,10 +84,44 @@ export const FirstRow = styled.div`
     grid-gap: 20px;
 
     .left {
+        .first__image {
+            display: flex;
+            justify-content: center;
+
+            @media only screen and (max-width: 480px) {
+               width: 100%;
+
+               img {
+                   width: 100%;
+                   height: 100%;
+               }
+            }
+        }
         .second-image-container {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media only screen and (max-width: 1280px) {
+                flex-direction: column;
+            }
+            @media only screen and (max-width: 680px) {
+                flex-direction: row;
+            }
+            @media only screen and (max-width: 480px) {
+                width: 100%;
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1180px) {
+            display: flex;
+        }
+        @media only screen and (max-width: 680px) {
+            flex-direction: column;
         }
     }
     .right > h3 {
@@ -104,8 +141,7 @@ export const FirstRow = styled.div`
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 70%;
-           
+            width: 70%;         
 
             .green_text {
                 font-weight: 600;
@@ -121,12 +157,22 @@ export const FirstRow = styled.div`
                 color: #33A0FF;
                 font-size: 14px;
             }
+
+            @media only screen and (max-width: 500px) {
+                width: 100%;
+            }
         }
         .flex-border-bottom {
             border-bottom: 0.5px solid rgba(160, 177, 196, 0.3);
             padding-bottom: 10px;
             margin-bottom: 15px;
+
+
         }
+    }
+
+    @media only screen and (max-width: 1180px) {
+        display: block;
     }
 `
 export const RightContainer = styled.div`

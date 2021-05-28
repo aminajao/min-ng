@@ -12,7 +12,7 @@ const Overview = () => {
             <LeftContainer>
                 <FirstRow>
                     <div className="left">
-                        <div>
+                        <div className="first__image">
                             <img src={ShoeLarge} alt="" />
                         </div>
                         <div className="second-image-container">

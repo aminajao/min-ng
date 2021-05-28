@@ -2,6 +2,9 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     margin: 25px 100px;
+    @media only screen and (max-width: 1280px) {
+        margin:  25px;
+    }
 `
 export const Heading = styled.div`
     letter-spacing: 0.06em;

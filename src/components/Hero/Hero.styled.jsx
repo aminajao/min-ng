@@ -3,7 +3,12 @@ import styled from 'styled-components'
 export const Container = styled.div`
     background-color: #6F972D;
     height: 300px;
-    background-image:  ${props => props.bgPattern}
+    background-image:  ${props => props.bgPattern};
+
+    @media only screen and (max-width: 768px) {
+        height: min-content;
+        padding-bottom: 50px;
+    }
 `
 
 export const Heading = styled.h1`
@@ -13,6 +18,10 @@ export const Heading = styled.h1`
     font-size: 25px;
     padding-top: 30px;
     text-align: center;
+
+    @media only screen and (max-width: 768px) {
+        margin: 0px 5px;
+    }
 `
 export const Text = styled.p`
     color: #ffffff;
@@ -23,6 +32,11 @@ export const Text = styled.p`
 export const SearchContainer = styled.div`
     display: flex;
     margin: 50px 100px;
+
+    @media only screen and (max-width: 768px) {
+        margin: 10px 25px;
+        flex-direction: column;
+    }
 `
 export const SellButton = styled.button`
     padding: 15px 45px;
@@ -36,6 +50,12 @@ export const SellButton = styled.button`
     margin-right: 20px;
     min-width: fit-content;
     cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
 `
 export const SearchInput = styled.input`
     padding: 0px 25px;
@@ -44,6 +64,14 @@ export const SearchInput = styled.input`
     color: rgba(37, 43, 29, 0.5);
     width: 100%;
     font-family: inherit;
+
+    @media only screen and (max-width: 768px) {
+        padding: 15px 25px;
+        border-radius: 10px;
+        border: 0px;
+        outline: none;
+        margin-bottom: 10px;
+    }
 `
 export const SearchButton = styled.button`
     background: #F79033;
@@ -55,4 +83,11 @@ export const SearchButton = styled.button`
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+        padding: 15px 0px;
+        border-radius: 10px;
+        border: 0px;
+        outline: none;
+    }
 `

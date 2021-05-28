@@ -5,4 +5,8 @@ export const Container = styled.div`
     padding: 24px 0px;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 1280px) {
+        margin: 0px 25px;
+    }
 `
