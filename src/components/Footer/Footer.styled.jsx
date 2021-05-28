@@ -34,7 +34,8 @@ export const RightContainer = styled.div`
         margin-top: 50px;
     }
     @media only screen and (max-width: 600px) {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 `
 export const EachSection = styled.div`
@@ -64,7 +65,7 @@ export const MobileContainer = styled.div`
     margin: 10px 100px;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
     svg {
         margin: 0px 25px;
@@ -73,6 +74,7 @@ export const MobileContainer = styled.div`
     @media only screen and (max-width: 400px) {
         display: block;
         margin: 0px;
+        margin-bottom: 50px;
     }
 `
 export const FooterLinks = styled.div`
@@ -95,7 +97,7 @@ export const FooterLinks = styled.div`
     }
 
     .last {
-        margin-top: 25px;
+        margin-top: 50px;
         text-align: center;
     }
 

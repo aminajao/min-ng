@@ -39,4 +39,5 @@ export const SecondRow = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
     grid-gap: 50px;
     margin-top: 40px;
+    justify-items: center;
 `

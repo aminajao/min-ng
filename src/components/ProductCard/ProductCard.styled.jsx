@@ -1,9 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    background-color: #fff;
+    background-color: #fff;  
     
-    `
+    @media only screen and (max-width: 400px) {
+        max-width: 250px;
+    }
+`
 export const ImageContainer = styled.div`
     padding: 25px 10px;
     border-radius: 15px;
